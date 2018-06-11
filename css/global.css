@@ -14,88 +14,141 @@ li{
   display: inline;
   padding: 10px;
 }
-a{
-  text-decoration: none;
+a{text-decoration: none;}
+
+@media screen {
+  .cabecera{
+      background-color: #5b7989;
+      height: 70px;
+      border-style: none;
+      border-radius: 10px 10px 0px 0px;
+      -moz-border-radius: 10px 10px 0px 0px;
+      -webkit-border-radius: 10px 10px 0px 0px;
+    }
+    .title{
+      font-size: 24px;
+      text-align: left;
+      vertical-align: middle;
+      color:  white;
+      text-shadow: 2px 2px #02010A;
+      float: left;
+    }
+  nav .menu{
+    font-size: 18px;
+    float: right;
+  }
+  img{
+    border-style: solid;
+    border-color: black;
+    text-shadow: 2px 2px #02010A;
+    height: 90%;
+  }
+  .imgCenter{
+    background-color:  #82c3a6;
+    text-align: center;
+    border-style: none;
+    height: 40%;
+    padding: 1%;
+  }
+  .imagenP{
+    width: 70%;
+  }
+  .imgSecundarias{
+    background-color: #d5c75f;
+    display: flex;
+    flex-direction: row;
+    flex-grow: wrap;
+    width: -moz-available;
+    width: available;
+    text-align: center;
+    vertical-align: middle;
+    height: 450px;
+  }
+  .imagenS{
+    width: 50%;
+    height: 100%;
+    min-width: 400px;
+  }
+  footer{
+    background-color: #C6d5c5;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  footer div{
+    min-width: 300px;
+    width: 25%;
+    text-align: center;
+  }
+  footer img{
+    width: 15px;
+    height: 15px;
+    border-style: none;
+  }
+  .galeria{
+    text-align: center;
+    background-color:  #d5c75f;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: -moz-available;
+    width: available;
+  }
+  .gal{
+    width: 350px;
+    height: 300px;
+    min-width: 200px;
+  }
 }
-.cabecera{
-  background-color: #5b7989;
-  height: 60px;
-  border-style: none;
-  border-radius: 10px 10px 0px 0px;
-  -moz-border-radius: 10px 10px 0px 0px;
-  -webkit-border-radius: 10px 10px 0px 0px;
+@media (max-width: 420px) {
+  .cabecera{
+      background-color: #5b7989;
+      height: 150px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      border-radius: 10px 10px 0px 0px;
+      -moz-border-radius: 10px 10px 0px 0px;
+      -webkit-border-radius: 10px 10px 0px 0px;
+    }
+    .title{
+      font-size: 24px;
+      width: 100%;
+      text-align: center;
+      vertical-align: middle;
+      color:  white;
+      text-shadow: 2px 2px #02010A;
+    }
+    .menu{
+      font-size: 18px;
+      width: 100%;
+      align-content: center;
+    }
+    img{
+      border-style: solid;
+      border-color: black;
+      text-shadow: 2px 2px #02010A;
+      height: 90%;
+    }
+    .imgCenter{
+      background-color:  #82c3a6;
+      text-align: center;
+      height: 40%;
+      padding: 1%;
+    }
+    .imagenP{
+      width: 100%;
+    }
+    .imgSecundarias{
+      background-color: #d5c75f;
+      display: flex;
+      flex-direction: row;
+      flex-grow: wrap;
+      text-align: center;
+      padding: 1%;
+    }
+    .imagenS{
+      min-width: 300px;
+      width: 100%;
+    }
 }
-.title{
-  font-size: 24px;
-  text-align: left;
-  vertical-align: middle;
-  color:  white;
-  text-shadow: 2px 2px #02010A;
-  float: left;
-}
-nav .menu{
-  font-size: 18px;
-  float: right;
-}
-img{
-  border-style: solid;
-  border-color: black;
-  text-shadow: 2px 2px #02010A;
-  height: 90%;
-}
-.imgCenter{
-  background-color:  #82c3a6;
-  text-align: center;
-  border-style: none;
-  height: 40%;
-  padding: 1%;
-}
-.imagenP{
-  width: 70%;
-}
-.imgSecundarias{
-  background-color: #d5c75f;
-  display: flex;
-  flex-direction: row;
-  flex-grow: wrap;
-  height: 40%;
-  text-align: center;
-  padding: 1%;
-}
-.imagenS{
-  width: 50%;
-}
-footer{
-  background-color: #C6d5c5;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-footer div{
-  min-width: 300px;
-  width: 25%;
-  text-align: center;
-}
-footer img{
-  width: 15px;
-  height: 15px;
-  border-style: none;
-}
-.galeria{
-  background-color:  #d5c75f;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  height: 500px;
-  padding: 1%;
-}
-.gal{
-  width: 400px;
-  min-width: 200px;
-}
-/*
-.gal img{
-  width: 100%;
-  height: 50%;
-}
-*/
