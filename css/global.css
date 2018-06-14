@@ -18,12 +18,12 @@ a{text-decoration: none;}
 
 @media screen {
   .cabecera{
+      height: 15%;
       background-color: #5b7989;
-      height: 70px;
-      border-style: none;
       border-radius: 10px 10px 0px 0px;
       -moz-border-radius: 10px 10px 0px 0px;
       -webkit-border-radius: 10px 10px 0px 0px;
+      min-width: 350px;
     }
     .title{
       font-size: 24px;
@@ -36,44 +36,50 @@ a{text-decoration: none;}
   nav .menu{
     font-size: 18px;
     float: right;
+    text-align: center;
   }
   img{
-    border-style: solid;
-    border-color: black;
-    text-shadow: 2px 2px #02010A;
-    height: 90%;
+    box-shadow: 2px 2px #02010A;
+    -webkit-box-shadow: 2px 2px #02010A;
+    -moz-box-shadow:2px 2px #02010A;
   }
   .imgCenter{
     background-color:  #82c3a6;
+    display: block;
+    padding: 10px;
     text-align: center;
-    border-style: none;
-    height: 40%;
-    padding: 1%;
   }
   .imagenP{
-    width: 70%;
+    min-width: 300px;
+    width: 40%;
+  }
+  .imagenP img{
+    width: 100%;
   }
   .imgSecundarias{
     background-color: #d5c75f;
+    padding-left: 2%;
+    padding-right: -2%;
     display: flex;
     flex-direction: row;
-    flex-grow: wrap;
-    width: -moz-available;
-    width: available;
-    text-align: center;
-    vertical-align: middle;
-    height: 450px;
+    flex-wrap:wrap;
   }
   .imagenS{
-    width: 50%;
-    height: 100%;
-    min-width: 400px;
+    min-width: 300px;
+    width: 45%;
+    margin: 1%;
+    text-align: center;
+  }
+  .imagenS img{
+    width: 100%;
+    text-align: center;
   }
   footer{
     background-color: #C6d5c5;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    clear: both;
   }
   footer div{
     min-width: 300px;
@@ -93,23 +99,33 @@ a{text-decoration: none;}
     flex-wrap: wrap;
     width: -moz-available;
     width: available;
+    padding: 3%;
+
   }
   .gal{
-    width: 350px;
-    height: 300px;
     min-width: 200px;
+    width: 30%;
+    margin: 1%;
+
+  }
+  .gal img{
+    width: 100%;
+    text-align: center;
   }
 }
+
+
 @media (max-width: 420px) {
   .cabecera{
+      height: 20%;
       background-color: #5b7989;
-      height: 150px;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       border-radius: 10px 10px 0px 0px;
       -moz-border-radius: 10px 10px 0px 0px;
       -webkit-border-radius: 10px 10px 0px 0px;
+      min-width: 350px;
     }
     .title{
       font-size: 24px;
@@ -125,30 +141,68 @@ a{text-decoration: none;}
       align-content: center;
     }
     img{
-      border-style: solid;
-      border-color: black;
-      text-shadow: 2px 2px #02010A;
-      height: 90%;
+      box-shadow: 2px 2px #02010A;
+      -webkit-shadow: 2px 2px #02010A;
+      -moz-shadow: 2px 2px #02010A;
     }
     .imgCenter{
       background-color:  #82c3a6;
-      text-align: center;
-      height: 40%;
-      padding: 1%;
+      min-width: 350px;
     }
     .imagenP{
+      min-width: 200px;
+      padding: 1px;
+    }
+    .imagenP img{
       width: 100%;
     }
     .imgSecundarias{
       background-color: #d5c75f;
-      display: flex;
-      flex-direction: row;
-      flex-grow: wrap;
+      padding: 5px;
       text-align: center;
-      padding: 1%;
+      min-width: 200px;
     }
     .imagenS{
-      min-width: 300px;
+      min-width: 350px;
+      width: 95%;
+      margin: 5px;
+
+    }
+    .imagenS img{
       width: 100%;
+      float: left;
+    }
+    footer{
+      background-color: #C6d5c5;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      clear: both;
+      min-width: 350px;
+            text-align: center;
+    }
+    footer div{
+      min-width: 300px;
+      width: 25%;
+
+    }
+    footer img{
+      width: 15px;
+      height: 15px;
+      border-style: none;
+    }
+    .galeria{
+      text-align: center;
+      background-color:  #d5c75f;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: -moz-available;
+      width: available;
+    }
+    .gal{
+      width: 350px;
+      height: 300px;
+      min-width: 200px;
     }
 }
