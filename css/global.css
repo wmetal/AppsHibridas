@@ -1,10 +1,6 @@
 @font-face {
   font-family: FuentePagina;
-  src: url(../fonts/Sunset_Beach.ttf);
-}
-body{
-  background-color: #02010a;
-  font-family: FuentePagina, sans-serif;
+  src: url(../fonts/DancingScript.otf);
 }
 ul{
   list-style-type: none;
@@ -46,38 +42,35 @@ a{
   -moz-filter: sepia(90%);
 }
 @-webkit-keyframes slidein {
-  /*
-      Para ambas versiones el header debe tener una animación de slidein (debe venir de abajo hacia arriba y rebotar)
-       está animación debe hacerse
-       variando el margin-top de 150% a -5% y luego a 0%, en los momentos 0%, 60% y 100% respectivamente.
-  */
-  from{
-    margin-top: 150%;
-  }
-  60%{ margin-top: -5%; }
-  100%{ margin-top: 0%; }
+  0%{margin-top: 150%;}
+  60%{margin-top: -5%;}
+  100%{margin-top: 0%;}
+}
+@keyframes slidein {
+  0%{margin-top: 150%;}
+  60%{margin-top: -5%;}
+  100%{margin-top: 0%;}
 }
 @-moz-keyframes slidein {
-  /*
-      Para ambas versiones el header debe tener una animación de slidein (debe venir de abajo hacia arriba y rebotar)
-       está animación debe hacerse
-       variando el margin-top de 150% a -5% y luego a 0%, en los momentos 0%, 60% y 100% respectivamente.
-  */
-  from{
-    margin-top: 150%;
-  }
-  60%{ margin-top: -5%; }
-  100%{ margin-top: 0%; }
+  0%{margin-top: 150%;}
+  60%{margin-top: -5%;}
+  100%{margin-top: 0%;}
 }
 @media screen {
+  body{
+    background-color: #02010a;
+    font-family: FuentePagina, sans-serif;
+    width: 900px;
+    margin: auto;
+  }
   .cabecera{
-      height: 15%;
+      height: 10%;
       background-color: #5b7989;
       border-radius: 10px 10px 0px 0px;
       -moz-border-radius: 10px 10px 0px 0px;
       -webkit-border-radius: 10px 10px 0px 0px;
       min-width: 350px;
-      animation: slidein;
+      animation: slidein 3s;
     }
     .title{
       font-size: 24px;
@@ -114,6 +107,7 @@ a{
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
+    margin: auto;
   }
   .imagenS{
     min-width: 300px;
@@ -137,14 +131,13 @@ a{
     -webkit-border-radius: 0px 0px 10px 10px;
   }
   .footer div{
-    min-width: 300px;
-    width: 25%;
+    min-width: 200px;
     text-align: center;
+    margin: auto;
   }
   footer img{
     width: 15px;
     height: 15px;
-    border-style: none;
   }
   .galeria{
     text-align: center;
@@ -152,8 +145,6 @@ a{
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
-
-
   }
   .gal{
     min-width: 200px;
@@ -166,9 +157,16 @@ a{
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 899px) {
+  body{
+    background-color: #02010a;
+    font-family: FuentePagina, sans-serif;
+    align-content: center;
+    width: 100%;
+  }
   .cabecera{
       background-color: #5b7989;
+      height: 15%;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -176,6 +174,7 @@ a{
       -moz-border-radius: 10px 10px 0px 0px;
       -webkit-border-radius: 10px 10px 0px 0px;
       min-width: 350px;
+      animation: slidein 3s;
     }
     .title{
       font-size: 24px;
